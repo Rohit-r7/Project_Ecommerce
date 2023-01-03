@@ -42,12 +42,10 @@
                                 </li>
 
                                 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'common:seller_registration' %}">My-Cart</a>
-                                </li>
+                                
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'common:customer_registration' %}">My-Order</a>
+                                    <a class="nav-link" href="{% url 'customer:orders' %}">My-Order</a>
                                 </li>
 
                                 
@@ -56,11 +54,11 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'common:seller_registration' %}">Profile</a>
+                                    <a class="nav-link" href="{}">Profile</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'common:seller_registration' %}">Log Out</a>
+                                    <a class="nav-link" href="{}">Log Out</a>
                                 </li>
                                 
                                 
@@ -75,7 +73,7 @@
             <div class="col-md-4 pt-2 mb-3" style="float: right;">
                 
                 
-                <a href="" style="float: right;" class="ps-2">
+                <a href="{% url 'customer:cart' %}" style="float: right;" class="ps-2">
                     <h4><i class="fa-solid fa-cart-shopping pt-2 icons"></i></h4>
                 </a>
 
